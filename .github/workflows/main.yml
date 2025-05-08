@@ -50,6 +50,8 @@ jobs:
     - name: Deploy
       run: |
         git clone -b gh-pages https://oauth2:${{secrets.ACCESS_TOKEN}}@github.com/CZH233/ACM_template /tmp/template
+        pwd
+        ls
         cp template.pdf /tmp/template/
         cd /tmp/template
         git add template.pdf
